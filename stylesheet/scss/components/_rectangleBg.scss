@@ -1,0 +1,39 @@
+.rectangles{
+    position: relative;
+    // z-index: -2;
+    display: none;
+    @include mediaBreakpoints(lg){
+        display: block;
+    }
+}
+.rectangle-bg{
+    width: 473px;
+    height: 1583px;
+    transform: rotate(26.284deg);
+    background: $rectangleBgGradient;
+    mix-blend-mode: soft-light;
+    &.bt1{
+        position: absolute;
+        top: -600px;     
+        left: 25px;  
+    }
+    &.bt2{ 
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    &.bt3{
+        position: absolute;
+        top: -300px;  
+        left:525px;  
+    }
+    &.bt4{
+        position: absolute;
+        top: -202.69px;  
+        left: 750px;  
+    }
+    &--reverse{
+        background: $rectangleReverseBgGradient;
+    
+    }
+}

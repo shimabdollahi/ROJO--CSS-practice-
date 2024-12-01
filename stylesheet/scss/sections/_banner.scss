@@ -1,0 +1,90 @@
+
+.banner-section{
+   @extend %banner-grid-for-bootstrap-container;
+   .banner__info{
+    display: none;
+    // visibility: hidden;
+    @include mediaBreakpoints(md){
+        display: block;
+        // visibility:visible;
+    }
+   }
+}
+.banner{
+    &__left{
+        position: relative;
+        padding-bottom: 201.87px;
+    }
+    &__text-bg{  
+        @extend %xxxLargeFont; 
+        display: none;     
+        @include mediaBreakpoints(lg){
+            display: unset;
+            position: absolute;
+            z-index: -1;
+            left:-247px ;
+            top: -71.93px;
+            color: $blackColor;
+            font-family: $secondaryFontFamily;
+            opacity: 30%;
+            -webkit-text-stroke: 3px $rojoBorderColor;
+        }
+        
+    }
+    &__info{
+        // position: relative;
+        // top: 209.98px;
+        // z-index: 1;
+        margin-top: 38px;
+        margin-bottom: 54px;
+        padding-left:21.56px ;
+        padding-right: 33px;
+        @include mediaBreakpoints(lg){
+            position: relative;
+            top: 209.98px;
+            z-index: 1;
+            margin-top: unset;
+            margin-bottom: 231.87px;
+            padding-left:unset;
+            padding-right: unset;
+        }
+        h1{
+            @extend %bannerHeadingFont;
+            margin-bottom: 12px;
+            @include mediaBreakpoints(lg){
+                margin-bottom: 21.89px;
+            }
+        }
+        p{
+            @extend %bannerPFont;
+        }
+        .ROJObtn{
+            margin-top: 24px;
+            margin-bottom: 54px;
+            @include mediaBreakpoints(lg){
+                margin-top: 117.43px; 
+                margin-bottom: unset;
+            }
+            img{
+                margin-right: 13.24px;
+            }
+        }
+        .sosmed{
+            margin-bottom: 15.14px;
+            @include mediaBreakpoints(lg){
+                margin-bottom: 39.81px;
+            }
+        }
+    } 
+    &__right{
+        position: relative;
+        background-color: $primaryColor;
+        min-height: $backpackManHeightXS;
+    }   
+}
+/* 
+.banner-right{
+    background-color: $primaryColor;
+    position: relative;
+} */
+

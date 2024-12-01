@@ -1,0 +1,20 @@
+$backpackManHeightXS:454px;
+$backpackManHeightLG:885.7px;
+.backpack-man{
+    position: absolute;
+    z-index: 3;
+    right: 46.4px;
+    bottom: 0px;
+    @include mediaBreakpoints(lg){
+        right: 0px;
+    }
+    
+}
+img.backpack-man{   
+    height:$backpackManHeightXS;
+    width: auto;
+    @include mediaBreakpoints(lg){
+        width:606px;
+        height:$backpackManHeightLG;
+    }
+}

@@ -1,0 +1,6 @@
+.banner-info-section{
+    background-color: $blackColor;
+    @include mediaBreakpoints(md){
+        display: none;
+    }
+}

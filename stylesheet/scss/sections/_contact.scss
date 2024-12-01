@@ -1,0 +1,123 @@
+.contact-section{  
+    padding:42px 24px 77px 24px;  
+    @include mediaBreakpoints(lg){
+        padding: unset;
+        padding-top: 136px;
+        padding-bottom: 151px;
+    }
+}
+.contact-way{
+    display: flex;
+    
+    gap: 22px;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 23px; 
+       
+        margin-top:24px;
+        margin-bottom:20px;
+        @include mediaBreakpoints(lg){
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top:75px;
+            margin-bottom:67px;
+            gap: 20px; 
+        }
+    }
+    &__title{
+        color: $primaryColor;
+        @extend %contactWayTitleFont;
+        // margin: 7px 0px;
+        @include mediaBreakpoints(lg){
+            margin: 7px 0px;
+        }
+    }
+    &__info{
+        /* color: #FFF; */
+        @extend %contactWayInfoFont;
+    }
+    &__icon-bg{
+        height: 34px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: $primaryColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mediaBreakpoints(lg){
+            height: 68px; 
+        }
+
+        img{
+            height: 16px;
+            max-width: 16px;
+            @include mediaBreakpoints(lg){
+                height: unset;
+                max-width: unset;
+            }
+        }
+    }
+}
+// .contact-form-loc{
+//     gap: 30px;
+// }
+.contact{
+    &__form-loc{
+        display: flex;
+        flex-direction: column-reverse;
+        @include mediaBreakpoints(lg){
+            flex-direction: row;
+            gap:30px;
+            justify-content: space-between;
+            
+        }
+    }
+    &__form{
+        width: 100%;      
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        .ROJObtn{
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+        @include mediaBreakpoints(lg){
+            width: 85.68%;
+        }
+    }
+    &__input{
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        input{
+            aspect-ratio: 401/55;
+        }
+        textarea{
+            aspect-ratio: 401/154;
+        }
+    }
+    &__loc{       
+        padding-top: 12px;
+        @include mediaBreakpoints(lg){
+            width: 60%;
+        }
+        img{
+            width: 100%;
+            // height: 50%;
+            height: 185px;
+            margin-bottom: 40px;
+            @include mediaBreakpoints(lg){
+                height:unset;
+                aspect-ratio: 673/600;
+                margin-bottom: unset;
+            }
+        }
+    }
+    
+}
+.contact-form-div{
+    @include mediaBreakpoints(lg){
+        width: 40%;
+    }
+}

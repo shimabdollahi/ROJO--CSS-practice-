@@ -1,0 +1,80 @@
+.portfolio-section{
+    background-color: $bgDarkColor;
+    position: relative;
+    z-index: -2;
+    overflow:hidden; //*****point
+    .ROJObtn{
+        margin: auto;
+        margin-top: 53px;
+        margin-bottom: 68px;
+        @include mediaBreakpoints(md){
+            margin-top: 79px;
+            margin-bottom: 140px;
+        }
+    }
+}
+.portfolio{
+    position: relative;
+    // display: grid;
+    // grid-template-columns: repeat(3,1fr);
+    // grid-template-rows: repeat(2,1fr);
+    // row-gap: 32px;
+    // column-gap: 30px;
+    padding: auto;
+   
+    @include mediaBreakpoints(md){
+        padding-top: 182px;
+        // padding-bottom: 285px;
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        // max-width: 51.28%;
+        // max-width: 200px;
+        max-width: 50%;
+        height: auto;
+        // margin:0px 95px;
+        // @include mediaBreakpoints(sm){
+            
+        // }
+        @include mediaBreakpoints(md){
+            max-width: 100%;
+            margin: unset;
+        }
+    }
+    &__content{
+        // margin:0px 24px 25px 24px;
+        padding:57px 24px 25px 24px;
+        @include mediaBreakpoints(md){
+            // margin: unset;
+            padding: 57px 30px 57px 0px;
+        }
+        @include mediaBreakpoints(lg){
+            // margin: unset;
+            padding: 20px 30px 0px 0px;
+           
+        }
+        @include mediaBreakpoints(xl){
+            // margin: unset;
+            padding: 57px 30px 57px 0px;
+        }
+        
+        h3{
+            @extend %h2Font;
+            margin-bottom: 20px;
+            @include mediaBreakpoints(md){
+                margin-bottom: 30px;
+            }
+            span{
+                color: $primaryColor;
+            }
+        }
+        p{
+            color: $whiteColor;
+            @extend %pFont;
+        }
+    }
+}
+

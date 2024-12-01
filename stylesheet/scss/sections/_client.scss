@@ -1,0 +1,15 @@
+.client-section{
+    background-color: $bgLightColor;
+    padding: 40px 0px;
+}
+.client__img{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 163px;
+        height: auto;
+        @include mediaBreakpoints(lg){
+            width : 281px; 
+        }
+    }
+}

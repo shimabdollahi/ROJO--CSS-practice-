@@ -1,0 +1,109 @@
+
+*{
+    box-sizing: border-box;
+}
+body{  
+    color: $whiteColor;
+    font-family: $primaryFontFamily;
+    background-color: $blackColor;
+}
+a{
+    text-decoration: none;
+    color: $whiteColor;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+p{
+    margin: 0;
+    
+}
+h1,h2, h3,h4{
+    margin: 0px;
+}
+.container{
+    padding: 0px 0px;
+}
+%banner-grid-for-bootstrap-container{
+    display: grid;
+    // grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 100%;
+    @include mediaBreakpoints(sm){
+        grid-template-columns: 1fr 540px 1fr;
+        // grid-template-columns: 540px;
+    }
+    @include mediaBreakpoints(md){
+        grid-template-columns: 1fr 720px 1fr;
+    }
+    @include mediaBreakpoints(lg){
+        grid-template-columns: 1fr 960px 1fr;
+    }
+    @include mediaBreakpoints(xl){
+        grid-template-columns: 1fr 1140px 1fr;
+    }
+    @include mediaBreakpoints(xxl){
+        grid-template-columns: 1fr 1320px 1fr;
+    }
+}
+%testimony-grid-for-bootstrap-container{
+    display: grid;
+    // grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 100%;
+    // @include mediaBreakpoints(sm){
+    //     grid-template-columns: 1fr 540px 1fr;
+    //     // grid-template-columns: 540px;
+    // }
+    // @include mediaBreakpoints(md){
+    //     grid-template-columns: 1fr 720px 1fr;
+    // }
+    @include mediaBreakpoints(lg){
+        grid-template-columns: 1fr 960px 1fr;
+    }
+    @include mediaBreakpoints(xl){
+        grid-template-columns: 1fr 1140px 1fr;
+    }
+    @include mediaBreakpoints(xxl){
+        grid-template-columns: 1fr 1320px 1fr;
+    }
+}
+
+// .container{
+//     width: 1200px;
+//     margin: auto;
+// }
+
+.d-flex{
+    display: flex;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.bg-black{
+    background-color: $blackColor;
+}
+.bgc-primary{
+    background-color: $primaryColor;
+}
+.c-secondary{
+    color: $secondaryColor;
+}
+.relative{
+    position: relative;
+}
+.mirror-x{
+    transform: scaleX(-1);
+}
+
+.mt-14{
+    margin-top: 14px;
+}
+.mb-14{
+    margin-bottom: 14px;
+}
+
+.max-width{
+    min-width: 100%;
+}

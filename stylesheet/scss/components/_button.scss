@@ -1,0 +1,17 @@
+.ROJObtn{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    background-color: $secondaryColor;
+    color: $blackColor;
+    @extend %btnFont;
+    padding: 11px 18.32px 13px 17.44px;
+    @include mediaBreakpoints(lg){
+        padding: 18.91px 34.62px 14.93px 28.51px;
+    }
+}
+.ROJObtn-primary{
+    background-color: $primaryColor;
+    color: $whiteColor;
+    @extend %btn-primaryFont;
+}

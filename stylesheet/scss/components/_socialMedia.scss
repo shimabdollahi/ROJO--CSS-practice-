@@ -1,0 +1,25 @@
+.sosmed{
+    display: flex;
+    gap: 27px;
+    align-items: center;
+}
+.social-media-link--primary{
+    background-color: $primaryColor;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mediaBreakpoints(lg){
+        width: 41px;
+        height: 41px;
+    }
+    img{
+        max-height: 21px;
+        @include mediaBreakpoints(lg){
+            max-height: unset;
+        }
+    }
+
+}

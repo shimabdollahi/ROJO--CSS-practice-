@@ -1,0 +1,75 @@
+.header-section{
+    @extend %banner-grid-for-bootstrap-container;
+    background-color: $blackColor;
+}
+.header{
+    
+    &__left{
+        background-color: $blackColor;
+        @include mediaBreakpoints(lg){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom:19.3px ;
+            padding-top: 44px;
+        }
+        nav{
+            display: none;
+            @include mediaBreakpoints(lg){
+                display: flex;
+            }
+        }
+        ul{
+            display: flex;
+            gap: 32px;
+            padding-right: 20px;
+            li{
+                display: flex;
+                gap: 13px;
+            
+            }
+        }
+        h2{
+            font-family: $secondaryFontFamily;
+            @extend %headerHeadingFont;
+            margin-left: 24px;
+            padding-top:16px ;
+            @include mediaBreakpoints(lg){
+                margin-left: unset;
+                padding-top:unset;
+            }
+        }
+    }
+    &__right{
+        background-color: $primaryColor;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-bottom:16px ;
+        padding-top: 16px;
+        padding-right:24px;
+        @include mediaBreakpoints(lg){
+            padding-bottom:19.3px ;
+            padding-top: 44px;
+            padding-right:unset;
+        }
+        nav{
+            @include mediaBreakpoints(lg){
+                display: none;
+            }
+        }
+        a.tel{  
+            @extend %headerTelFont;
+            display: none;
+            @include mediaBreakpoints(lg){
+                display: flex;
+                
+                align-items: center;
+                img{
+                    margin-right: 14px;
+                }
+            }
+            
+        }
+    }
+}

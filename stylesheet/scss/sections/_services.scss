@@ -1,0 +1,53 @@
+.services-section{
+    background-color: $bgDarkColor;
+    // position: relative;
+    // z-index: 1;
+}
+.services{
+    // display: flex;
+    // gap: 28.26px;
+    padding:99px 24px;
+    margin: 0px;
+    @include mediaBreakpoints(lg){
+        padding: unset;
+        padding-top: 131px;
+        padding-bottom: 160.59px;
+    }
+}
+.service-box{
+    background-color: $bgLightColor;
+    padding: 20px 15px 21px 10px;
+    @include mediaBreakpoints(lg){
+        padding: 62px 30px 65.41px 30px;
+    }
+    // padding-bottom: 65.41px;
+    // padding-left: 30px;
+    // padding-right: 30px;
+    &:hover{
+        background-color: $primaryColor;
+        h3{
+            color: $whiteColor;
+        }
+    }
+    h3{
+        color: $primaryColor;
+        @extend %serviceBoxHeadingFont;
+        margin-top: 12px;
+        margin-bottom: 8px;        
+        @include mediaBreakpoints(lg){
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+    }
+    p{
+        color: $whiteColor;
+        @extend %pFont;
+    }
+    img{        
+        height: 52px;
+        width: auto;
+        @include mediaBreakpoints(lg){
+            height: 80px; 
+        }
+    }
+}

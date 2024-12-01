@@ -1,0 +1,122 @@
+.about-me-section{
+    // position: relative;
+    // z-index: 1;
+    /* background: rgba(0, 0, 0, 0.64); */
+    background: $blackColor;
+    display: flex;
+    justify-content: center;
+    p{
+        @extend %pFont;
+        margin-bottom: 35px;
+    }
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 68px 24px 66px 24px;
+    @include mediaBreakpoints(lg){
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 116px 0px;
+    }
+    &__img-bg{
+        background: $transparentBlackColor;
+        background-image: url(/img/Rectangle\ 89.png);
+        backdrop-filter: blur(16px);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover ;
+        width: 100%;       
+        @include mediaBreakpoints(lg){
+            width: 1920px;
+        }
+    }
+    &__left{
+        @include mediaBreakpoints(lg){
+            width: 53.75%;
+        }
+        .paragraphs{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            @include mediaBreakpoints(lg){
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 35px;
+            }
+            p{
+                margin: 0px;
+                @include mediaBreakpoints(lg){
+                    margin: unset;
+                }
+            }
+        }
+        h2{
+            @extend %h2Font;
+            &>span{
+                color: $secondaryColor;
+            }
+            
+        }
+        h3{
+            @extend %h3Font;
+            margin: 5px 0px 20px 0px;
+            @include mediaBreakpoints(lg){
+                margin: 35px 0px;
+            }
+        }
+        a{
+            color: $secondaryColor;
+           @extend %pFont;
+        
+            display: flex;
+            gap: 15;
+            align-items: center; 
+            margin-top: 28px;
+            @include mediaBreakpoints(lg){
+                margin-top: unset;
+            }
+            img{
+                height: 21px;
+                @include mediaBreakpoints(lg){
+                    height: unset;
+                }
+            }      
+        }
+    }
+    &__right{
+        @include mediaBreakpoints(lg){
+            width: 30.33%;
+        }
+        h2{
+            color:$secondaryColor;
+            margin-top: 43px;
+            margin-bottom: 20px;
+           @extend %h3Font;
+           @include mediaBreakpoints(lg){
+                margin-top: unset;
+                margin-bottom: 35px;
+           }
+        }
+        p{
+            margin-bottom: 20px;
+            @include mediaBreakpoints(lg){
+                margin: unset;
+            }
+        }
+        ul{
+            gap:13px;
+        }
+    }
+}
+/* {
+    color: var(--secondary, #FCCA2E);
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+} */
+
+

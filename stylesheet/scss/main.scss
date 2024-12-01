@@ -1,0 +1,22 @@
+@import "mixins/responsive";
+
+@import "globals/colors";
+@import "globals/typography";
+@import "globals/general";
+
+@import "components/button";
+@import "components/socialMedia";
+@import "components/backPackMan";
+@import "components/rectangleBg";
+
+@import "layouts/footer";
+@import "layouts/header";
+
+@import "sections/banner";
+@import "sections/banner-info";
+@import "sections/services";
+@import "sections/about";
+@import "sections/portfolio";
+@import "sections/testimony";
+@import "sections/contact";
+@import "sections/client";

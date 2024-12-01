@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Righteous;
+    src: url(/fonts/Righteous/Righteous-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+}
+$primaryFontFamily: Roboto;
+$secondaryFontFamily:Righteous;
+
+// $btnFontSize:18px;
+%btnFont{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    @include mediaBreakpoints(lg){
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+}
+%btn-primaryFont{
+    font-weight: 700;
+    line-height: normal;
+    // font-style: normal;
+}
+%headerHeadingFont{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    @include mediaBreakpoints(lg){
+        font-size: 65px;
+        line-height: 80.71px;
+    }
+}
+%headerTelFont{
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24.61px;
+}
+%bannerHeadingFont{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 175%;
+    @include mediaBreakpoints(lg){
+        font-size: 51px;
+        line-height: 58.59px;
+    }
+}
+%bannerPFont{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    @include mediaBreakpoints(lg){
+        font-size: 21px;
+    }
+}
+.menuFont{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+}
+.h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mediaBreakpoints(lg){
+        font-size: 50px;
+    }
+}
+%h2Font{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mediaBreakpoints(lg){
+        font-size: 30px;
+    }
+    @include mediaBreakpoints(xl){
+        font-size: 50px;
+    }
+}
+%h3Font{
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mediaBreakpoints(lg){
+        font-size: 40px;
+    }
+}
+%h4Font{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mediaBreakpoints(lg){
+        font-size: 24px;
+    }
+}
+%serviceBoxHeadingFont{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @include mediaBreakpoints(lg){
+        font-size: 24px;
+    }
+}
+%contactWayTitleFont{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    @include mediaBreakpoints(lg){
+        font-size: 18px;
+    }
+}
+%contactWayInfoFont{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 114.286% */
+    @include mediaBreakpoints(lg){
+        font-size: 21px;
+    }
+}
+.p{
+    /* Body Text */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    @include mediaBreakpoints(lg){
+        font-size: 16px;
+    }
+}
+%pFont{
+    /* Body Text */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    @include mediaBreakpoints(lg){
+        font-size: 16px;
+    }
+}
+%testimonyPFont{
+    font-size: 16px;
+    @include mediaBreakpoints(lg){
+        font-size: 30px;
+    }    
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+%xxxLargeFont{
+    font-size: 490px;
+    line-height: 869.19px;
+    font-weight: 400;
+    @include mediaBreakpoints(xl){
+        font-size: 700px;
+    }
+}
+.italic{
+    font-style: italic;
+}
+.ta-c{
+    text-align: center;
+}

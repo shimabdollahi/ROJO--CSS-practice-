@@ -1,0 +1,57 @@
+.testimony-section{
+    // position: relative;
+    // z-index: 1;    
+    @extend %testimony-grid-for-bootstrap-container;
+   
+    background-color: $blackColor;
+    
+}
+.testimony{
+    background-color: $primaryColor;
+    &__backpack-man{
+        position: relative;
+        height: 386px;
+        @include mediaBreakpoints(lg){
+            height: 100%;
+        }
+        .backpack-man{
+            right: 23px;
+            @include mediaBreakpoints(lg){
+                right: 0px;
+                // bottom: 0px;
+            }
+        }
+    }
+    &__info{
+        max-width: 560px;
+        padding: 50px 26px 89px 26px;
+        color: $blackColor;
+        @include mediaBreakpoints(lg){
+            padding: 125px 0px;
+        }
+        img{
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            @include mediaBreakpoints(lg){
+                width: 160px;
+                height: 160px
+            }
+        }
+        p{
+            @extend %testimonyPFont;
+            margin:23px  0px;
+            @include mediaBreakpoints(lg){
+                margin: 50px 0px;
+            }
+            
+        }
+        h3{
+            @extend %h4Font;
+        }
+        h4{
+            @extend %pFont;
+            margin-top: 9px;
+        }
+    }
+}
